@@ -50,6 +50,7 @@ namespace ConsoleApp1
                         fileStream.Seek(fileStream.Length, SeekOrigin.Begin);
                         fileStream.Write(msgBytes, 0, byteCount);
 
+                        // Generate key file here.....
                         Task.Delay(delayInMilliseconds).Wait();
 
                         fileStream.Close();
