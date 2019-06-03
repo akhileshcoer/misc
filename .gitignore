@@ -5,3 +5,7 @@
 /DotnetcoreWinSvc/.vs
 /DotnetcoreWinSvc/DotnetcoreWinSvc/obj
 /DotnetcoreWinSvc/DotnetcoreWinSvc/bin
+/.vs
+/KeyFileGenerationAndRotationNLB/.vs
+/KeyFileGenerationAndRotationNLB/ConsoleApp1/bin
+/KeyFileGenerationAndRotationNLB/ConsoleApp1/obj
