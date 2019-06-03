@@ -70,6 +70,10 @@ namespace ConsoleApp1
                         Task.Delay(delayInMilliseconds).Wait();
                         Console.WriteLine($"re-trying -- count#{retryCount}");
                     }
+                    else
+                    {
+                        Console.WriteLine("Retrycount is exhausted.");
+                    }
                 }
                 catch (Exception e)
                 {
