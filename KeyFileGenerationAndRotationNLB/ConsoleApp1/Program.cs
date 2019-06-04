@@ -60,15 +60,14 @@ namespace ConsoleApp1
                     }
                     break;
                 }
-                catch (IOException ioEx)
+                catch (IOException)
                 {
                     Console.WriteLine($"IOException is caught");
-                    //Console.Error.WriteLine(ioEx.ToString());
+                    retryCount++;
                     if (retryCount <= retryMaxCount)
-                    {
-                        retryCount++;
+                    {                        
                         Task.Delay(delayInMilliseconds).Wait();
-                        Console.WriteLine($"re-trying -- count#{retryCount}");
+                        Console.WriteLine($"#################re-trying ---------------- count#{retryCount}");
                     }
                     else
                     {
@@ -81,7 +80,7 @@ namespace ConsoleApp1
                     Console.Error.WriteLine(e.ToString());
                     break;
                 }
-            } while (retryCount < retryMaxCount);
+            } while (retryCount <= retryMaxCount);
 
             Console.WriteLine("enter any key to exit");
             Console.Read();
