@@ -14,7 +14,7 @@ namespace ConsoleApp1
             var guid = Guid.NewGuid();
             Console.WriteLine($"My name: {guid.ToString()} ");
 
-            var retryMaxCount = 6;
+            var retryMaxCount = 3;
             var delayInMilliseconds = 200;
             var retryCount = 0;
 
